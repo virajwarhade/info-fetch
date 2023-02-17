@@ -88,10 +88,16 @@ if(isset($_POST['submit'])){
 
   $nm = $_POST['nm'];
   $ph = $_POST['ph'];
-  
+
+  setcookie('name',$nm, 3600 * 60 + time(),'/');
+  setcookie('number',$ph, 3600 * 60 + time(),'/');
+
   $sql = "UPDATE `fetch` SET `name`='$nm',`mob_no`= $ph WHERE id = $id";
   
                     if(mysqli_query($con,$sql)){
+
+                      
+
                         $sql="";
 
                         header("Location:/info-fetch/update.php?id=$id");
