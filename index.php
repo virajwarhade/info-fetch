@@ -44,7 +44,6 @@ while($row = mysqli_fetch_array($result)){
 
 <div class="container-sm col-sm-6 col-12 mt-5 row mx-auto">
 
-
     <div class="mt-5 shadow rounded-3 bg-white border">
       <div class="mb-3 mt-4">     
         <div class="dropdown">
@@ -60,7 +59,7 @@ while($row = mysqli_fetch_array($result)){
       </div>
     </div>
 
-
+    
   </div>
 
 
@@ -73,7 +72,7 @@ while($row = mysqli_fetch_array($result)){
 
   <script>
     // Define the array of names
-    var names = ["Alice", "Bob", "Charlie", "David", "Eve", "Frank", "Grace", "Harry", "Isabelle", "John"];
+    var names = <?php echo $name; ?>;
 
     // Attach event listener to input field
     $("#myInput").on("input", function() {
