@@ -1,1 +1,48 @@
 <!------------------------------------------------------>
+
++----------------------------+
+|                            |
+|         ob_start();        |
+|                            |
+|                            |
+|                            |
+|                            |
+|        ob_end_flush();     |
+|                            |
++----------------------------+
+
+
+
+
+<?php ob_start();  
+include '../conection.php';
+?>
+
+
+
+<?php 
+
+
+
+
+
+ ob_end_flush();
+?>
+
+
+
+ header("Location:/job-portal-project/auth/index.php?id=$company_id");
+
+
+
+<form method='post' action=<?php echo $_SERVER['PHP_SELF'];?>></form>
+
+<form method='post' action=<?php echo $_SERVER['PHP_SELF'];?> enctype="multipart/form-data"></form>
+
+
+$sql = "SELECT * FROM `company` WHERE company_id = '$id' && password = '$pass' ";
+$result = mysqli_query($con,$sql);
+
+while($row = mysqli_fetch_array($result)){
+$row['fieldname'];    
+}
