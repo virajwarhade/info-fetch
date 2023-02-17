@@ -20,7 +20,7 @@ while ($row = mysqli_fetch_array($result)) {
 ?>
 
 <head>
-  <title>info-fetch</title>
+  <title>HOME</title>
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -38,7 +38,9 @@ while ($row = mysqli_fetch_array($result)) {
       <div class="mb-3 mt-4">     
         <div class="dropdown">
           <input type="text" name="nm" value="" class="form-control" id="myInput" placeholder="Type Name" required>
-          <div class="dropdown-menu" aria-labelledby="myInput" id="myDropdown"></div>
+
+          <div class="dropdown-menu border shadow" aria-labelledby="myInput" id="myDropdown"></div>
+
         </div>
       </div>
       <div class="mb-3">
